@@ -9,7 +9,6 @@ import android.view.MenuItem;
 
 public class MovieDetailActivity extends ActionBarActivity {
 
-    private final String LOG_TAG = MovieDetailActivity.class.getSimpleName();
     private FragmentManager fragmentManager = getFragmentManager();
 
     @Override
@@ -23,23 +22,5 @@ public class MovieDetailActivity extends ActionBarActivity {
                     .commit();
         }
         getSupportActionBar().setElevation(0f);
-    }
-
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.menu_movie_detail, menu);
-        return true;
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        int id = item.getItemId();
-
-        if (id == R.id.action_settings) {
-            startActivity(new Intent(this, SettingsActivity.class));
-            return true;
-        }
-
-        return super.onOptionsItemSelected(item);
     }
 }

@@ -17,7 +17,6 @@ import java.util.List;
 
 public class MovieListFragment extends Fragment{
 
-    private final String LOG_TAG = MovieListFragment.class.getSimpleName();
     private final String STORED_MOVIES = "stored_movies";
     private SharedPreferences prefs;
     private ImageAdapter mMoviePosterAdapter;

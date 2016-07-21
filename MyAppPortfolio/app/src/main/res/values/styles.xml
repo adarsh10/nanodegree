@@ -24,7 +24,7 @@
     </style>
 
     <!-- settings theme -->
-    <style name="SettingsTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="SettingsTheme" parent="AppTheme">
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
@@ -39,7 +39,7 @@
         <item name="android:paddingRight">16dp</item>
         <item name="android:paddingTop">25dp</item>
         <item name="android:paddingBottom">25dp</item>
-        <item name="android:background">@color/primary</item>
+        <item name="android:background">@color/colorPrimary</item>
     </style>
 
     <!-- detail poster -->

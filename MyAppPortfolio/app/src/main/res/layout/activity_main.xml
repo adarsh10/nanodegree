@@ -25,7 +25,7 @@
         android:layout_height="60dp"
         android:background="#3f51b5"
         android:textColor="#ffffff"
-        android:text="Spotify Streamer" />
+        android:text="Movie App" />
 
     <Button
         android:id="@+id/btn2"

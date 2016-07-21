@@ -25,8 +25,6 @@ public class MainActivity extends AppCompatActivity {
         mBtn1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-/*                Toast toast = Toast.makeText(getApplicationContext(), "This button will launch my Spotify Streamer app!" , Toast.LENGTH_LONG);
-                toast.show();*/
                 Intent intent = new Intent(MainActivity.this, MovieApp.class);
                 startActivity(intent);
             }

@@ -41,8 +41,6 @@ public class FetchMoviesTask extends AsyncTask<String, Void, List<Movie>> {
             return null;
         }
 
-        // These two need to be declared outside the try/catch
-        // so that they can be closed in the finally block.
         HttpURLConnection urlConnection = null;
         BufferedReader reader = null;
         String moviesJsonStr = null;
@@ -110,7 +108,6 @@ public class FetchMoviesTask extends AsyncTask<String, Void, List<Movie>> {
     @Override
     protected void onPostExecute(List<Movie> results) {
         if (results != null) {
-            // return the List of movies back to the caller.
             delegate.onTaskCompleted(results);
         }
     }
@@ -144,8 +141,7 @@ public class FetchMoviesTask extends AsyncTask<String, Void, List<Movie>> {
 
         for(int i = 0; i < moviesLength; ++i) {
 
-            // for each movie in the JSON object create a new
-            // movie object with all the required data
+            // new movie object with all the required data for every movie
             JSONObject movie = moviesArray.getJSONObject(i);
             String title = movie.getString(ORIGINAL_TITLE);
             String poster = MOVIE_POSTER_BASE + MOVIE_POSTER_SIZE + movie.getString(POSTER_PATH);

@@ -13,13 +13,10 @@ import com.squareup.picasso.Picasso;
 
 public class MovieDetailFragment extends Fragment {
 
-    private final String LOG_TAG = MovieDetailFragment.class.getSimpleName();
     Movie movie;
-
     public MovieDetailFragment() {
         setHasOptionsMenu(true);
     }
-
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -31,9 +28,7 @@ public class MovieDetailFragment extends Fragment {
 
             movie = (Movie)intent.getParcelableExtra("movies_details");
             DisplayInfo(rootView);
-
         }
-
         return rootView;
     }
 
