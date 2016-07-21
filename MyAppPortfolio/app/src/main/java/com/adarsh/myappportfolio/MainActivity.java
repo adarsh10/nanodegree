@@ -1,5 +1,6 @@
 package com.adarsh.myappportfolio;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -24,8 +25,10 @@ public class MainActivity extends AppCompatActivity {
         mBtn1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast toast = Toast.makeText(getApplicationContext(), "This button will launch my Spotify Streamer app!" , Toast.LENGTH_LONG);
-                toast.show();
+/*                Toast toast = Toast.makeText(getApplicationContext(), "This button will launch my Spotify Streamer app!" , Toast.LENGTH_LONG);
+                toast.show();*/
+                Intent intent = new Intent(MainActivity.this, MovieApp.class);
+                startActivity(intent);
             }
         });
 
