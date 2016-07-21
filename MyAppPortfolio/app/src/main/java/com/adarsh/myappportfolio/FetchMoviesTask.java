@@ -26,7 +26,7 @@ public class FetchMoviesTask extends AsyncTask<String, Void, List<Movie>> {
 
     public AsyncResponse delegate;
     private final String LOG_TAG = FetchMoviesTask.class.getSimpleName();
-    private final String API_KEY = "79775fa9f83d1dac5b255fee6db1ccb5";
+    private final String API_KEY = "YOUR_API_KEY";
     private final String MOVIE_POSTER_BASE = "http://image.tmdb.org/t/p/";
     private final String MOVIE_POSTER_SIZE = "w185";
 
